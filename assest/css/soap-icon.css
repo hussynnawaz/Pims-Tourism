@@ -1,0 +1,642 @@
+/*
+ * Title:   Travelo | Icon Font Style File
+ * Author:  http://themeforest.net/user/soaptheme 
+ */
+
+/* Icons */
+@font-face {
+  font-family: 'soap-icons';
+  src: url("../fonts/soap-icons.eot?26664784");
+  src: url("../fonts/soap-icons.eot?26664784#iefix") format("embedded-opentype"), url("../fonts/soap-icons.woff?26664784") format("woff"), url("../fonts/soap-icons.ttf?26664784") format("truetype"), url("../fonts/soap-icons.svg?26664784#soap-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'soap-icons';
+    src: url('../font/soap-icons.svg?26664784#soap-icons') format('svg');
+  }
+}
+*/
+[class^="soap-icon"], [class*=" soap-icon"] {
+  vertical-align: baseline; }
+  [class^="soap-icon"]:before, [class*=" soap-icon"]:before {
+    font-family: "soap-icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    /* you can be more comfortable with increased icons size */
+    /*font-size: 120%;*/ }
+
+[class^="soap-icon"].circle, [class*=" soap-icon"].circle, .glyphicon.circle {
+  border: 1px solid;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.7333em;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -ms-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  display: inline-block;
+  text-align: center; }
+[class^="soap-icon"].takeoff-effect:before, [class*=" soap-icon"].takeoff-effect:before, .glyphicon.takeoff-effect:before {
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  transform: rotate(-25deg); }
+[class^="soap-icon"].takeoff-effect1:before, [class*=" soap-icon"].takeoff-effect1:before, .glyphicon.takeoff-effect1:before {
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  transform: rotate(25deg); }
+[class^="soap-icon"].landing-effect:before, [class*=" soap-icon"].landing-effect:before, .glyphicon.landing-effect:before {
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  transform: rotate(-25deg); }
+[class^="soap-icon"].flip-effect:before, [class*=" soap-icon"].flip-effect:before, .glyphicon.flip-effect:before {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH; }
+
+.soap-icon-fireplace:before {
+  content: '\e800'; }
+
+.soap-icon-television:before {
+  content: '\e801'; }
+
+.soap-icon-fridge:before {
+  content: '\e802'; }
+
+.soap-icon-aircon:before {
+  content: '\e803'; }
+
+.soap-icon-fmstereo:before {
+  content: '\e804'; }
+
+.soap-icon-beach:before {
+  content: '\e805'; }
+
+.soap-icon-juice:before {
+  content: '\e806'; }
+
+.soap-icon-food:before {
+  content: '\e807'; }
+
+.soap-icon-fueltank:before {
+  content: '\e808'; }
+
+.soap-icon-breakfast:before {
+  content: '\e809'; }
+
+.soap-icon-coffee:before {
+  content: '\e80a'; }
+
+.soap-icon-party:before {
+  content: '\e80b'; }
+
+.soap-icon-savings:before {
+  content: '\e80c'; }
+
+.soap-icon-address:before {
+  content: '\e80d'; }
+
+.soap-icon-horn:before {
+  content: '\e80e'; }
+
+.soap-icon-conference:before {
+  content: '\e80f'; }
+
+.soap-icon-support:before {
+  content: '\e810'; }
+
+.soap-icon-tree:before {
+  content: '\e811'; }
+
+.soap-icon-friends:before {
+  content: '\e812'; }
+
+.soap-icon-winebar:before {
+  content: '\e813'; }
+
+.soap-icon-plans:before {
+  content: '\e814'; }
+
+.soap-icon-guideline:before {
+  content: '\e815'; }
+
+.soap-icon-wifi:before {
+  content: '\e816'; }
+
+.soap-icon-binoculars:before {
+  content: '\e817'; }
+
+.soap-icon-key:before {
+  content: '\e818'; }
+
+.soap-icon-fork:before {
+  content: '\e819'; }
+
+.soap-icon-locations:before {
+  content: '\e81a'; }
+
+.soap-icon-couples:before {
+  content: '\e81b'; }
+
+.soap-icon-card:before {
+  content: '\e81c'; }
+
+.soap-icon-fitnessfacility:before {
+  content: '\e81d'; }
+
+.soap-icon-flexible:before {
+  content: '\e81e'; }
+
+.soap-icon-phone:before {
+  content: '\e81f'; }
+
+.soap-icon-cruise:before {
+  content: '\e820'; }
+
+.soap-icon-joystick:before {
+  content: '\e821'; }
+
+.soap-icon-lost-found:before {
+  content: '\e822'; }
+
+.soap-icon-securevault:before {
+  content: '\e823'; }
+
+.soap-icon-cruise-1:before {
+  content: '\e824'; }
+
+.soap-icon-cruise-3:before {
+  content: '\e825'; }
+
+.soap-icon-anchor:before {
+  content: '\e826'; }
+
+.soap-icon-cruise-2:before {
+  content: '\e827'; }
+
+.soap-icon-car-2:before {
+  content: '\e828'; }
+
+.soap-icon-pickanddrop:before {
+  content: '\e829'; }
+
+.soap-icon-car:before {
+  content: '\e82a'; }
+
+.soap-icon-car-1:before {
+  content: '\e82b'; }
+
+.soap-icon-hotel-2:before {
+  content: '\e82c'; }
+
+.soap-icon-hotel-1:before {
+  content: '\e82d'; }
+
+.soap-icon-plane:before {
+  content: '\e82e'; }
+
+.soap-icon-plane-bottom:before {
+  content: '\e82f'; }
+
+.soap-icon-plane-left:before {
+  content: '\e830'; }
+
+.soap-icon-plane-right:before {
+  content: '\e831'; }
+
+.soap-icon-carryon:before {
+  content: '\e832'; }
+
+.soap-icon-businessbag:before {
+  content: '\e833'; }
+
+.soap-icon-baggage:before {
+  content: '\e834'; }
+
+.soap-icon-bag:before {
+  content: '\e835'; }
+
+.soap-icon-suitcase:before {
+  content: '\e836'; }
+
+.soap-icon-hotel-3:before {
+  content: '\e837'; }
+
+.soap-icon-trunk-2:before {
+  content: '\e838'; }
+
+.soap-icon-hotel:before {
+  content: '\e839'; }
+
+.soap-icon-trunk-1:before {
+  content: '\e83a'; }
+
+.soap-icon-trunk-3:before {
+  content: '\e83b'; }
+
+.soap-icon-delayed-baggage:before {
+  content: '\e83c'; }
+
+.soap-icon-damaged-baggage:before {
+  content: '\e83d'; }
+
+.soap-icon-baggage-3:before {
+  content: '\e83e'; }
+
+.soap-icon-baggage-2:before {
+  content: '\e83f'; }
+
+.soap-icon-baggage-1:before {
+  content: '\e840'; }
+
+.soap-icon-magazine-1:before {
+  content: '\e841'; }
+
+.soap-icon-baggage-status:before {
+  content: '\e842'; }
+
+.soap-icon-magazine:before {
+  content: '\e843'; }
+
+.soap-icon-slider-1:before {
+  content: '\e844'; }
+
+.soap-icon-slider:before {
+  content: '\e845'; }
+
+.soap-icon-camera-2:before {
+  content: '\e846'; }
+
+.soap-icon-photogallery:before {
+  content: '\e847'; }
+
+.soap-icon-camera-3:before {
+  content: '\e848'; }
+
+.soap-icon-baggage-4:before {
+  content: '\e849'; }
+
+.soap-icon-baggage-5:before {
+  content: '\e84a'; }
+
+.soap-icon-shopping:before {
+  content: '\e84b'; }
+
+.soap-icon-shopping-1:before {
+  content: '\e84c'; }
+
+.soap-icon-shopping-2:before {
+  content: '\e84d'; }
+
+.soap-icon-shopping-3:before {
+  content: '\e84e'; }
+
+.soap-icon-camera-1:before {
+  content: '\e84f'; }
+
+.soap-icon-settings-1:before {
+  content: '\e850'; }
+
+.soap-icon-bad:before {
+  content: '\e851'; }
+
+.soap-icon-recommend:before {
+  content: '\e852'; }
+
+.soap-icon-entertainment:before {
+  content: '\e853'; }
+
+.soap-icon-balloon:before {
+  content: '\e854'; }
+
+.soap-icon-globe:before {
+  content: '\e855'; }
+
+.soap-icon-places:before {
+  content: '\e856'; }
+
+.soap-icon-clock-1:before {
+  content: '\e857'; }
+
+.soap-icon-clock:before {
+  content: '\e858'; }
+
+.soap-icon-settings:before {
+  content: '\e859'; }
+
+.soap-icon-automatic:before {
+  content: '\e85a'; }
+
+.soap-icon-parking:before {
+  content: '\e85b'; }
+
+.soap-icon-status:before {
+  content: '\e85c'; }
+
+.soap-icon-departure:before {
+  content: '\e85d'; }
+
+.soap-icon-letter:before {
+  content: '\e85e'; }
+
+.soap-icon-message:before {
+  content: '\e85f'; }
+
+.soap-icon-search-plus:before {
+  content: '\e860'; }
+
+.soap-icon-search-minus:before {
+  content: '\e861'; }
+
+.soap-icon-search:before {
+  content: '\e862'; }
+
+.soap-icon-restricted:before {
+  content: '\e863'; }
+
+.soap-icon-calendar:before {
+  content: '\e864'; }
+
+.soap-icon-stories:before {
+  content: '\e865'; }
+
+.soap-icon-liability:before {
+  content: '\e866'; }
+
+.soap-icon-insurance:before {
+  content: '\e867'; }
+
+.soap-icon-doc-minus:before {
+  content: '\e868'; }
+
+.soap-icon-availability:before {
+  content: '\e869'; }
+
+.soap-icon-calendar-1:before {
+  content: '\e86a'; }
+
+.soap-icon-calendar-check:before {
+  content: '\e86b'; }
+
+.soap-icon-list:before {
+  content: '\e86c'; }
+
+.soap-icon-doc-plus:before {
+  content: '\e86d'; }
+
+.soap-icon-left:before {
+  content: '\e86e'; }
+
+.soap-icon-right:before {
+  content: '\e86f'; }
+
+.soap-icon-top:before {
+  content: '\e870'; }
+
+.soap-icon-grid:before {
+  content: '\e871'; }
+
+.soap-icon-block:before {
+  content: '\e872'; }
+
+.soap-icon-star-1:before {
+  content: '\e873'; }
+
+.soap-icon-letter-1:before {
+  content: '\e874'; }
+
+.soap-icon-wishlist:before {
+  content: '\e875'; }
+
+.soap-icon-heart:before {
+  content: '\e876'; }
+
+.soap-icon-star:before {
+  content: '\e877'; }
+
+.soap-icon-roundtriangle-right:before {
+  content: '\e878'; }
+
+.soap-icon-roundtriangle-top:before {
+  content: '\e879'; }
+
+.soap-icon-roundtriangle-bottom:before {
+  content: '\e87a'; }
+
+.soap-icon-chevron-left:before {
+  content: '\e87b'; }
+
+.soap-icon-roundtriangle-left:before {
+  content: '\e87c'; }
+
+.soap-icon-bottom:before {
+  content: '\e87d'; }
+
+.soap-icon-arrow-top:before {
+  content: '\e87e'; }
+
+.soap-icon-arrow-bottom:before {
+  content: '\e87f'; }
+
+.soap-icon-arrow-right:before {
+  content: '\e880'; }
+
+.soap-icon-arrow-left:before {
+  content: '\e881'; }
+
+.soap-icon-longarrow-up:before {
+  content: '\e882'; }
+
+.soap-icon-longarrow-bottom:before {
+  content: '\e883'; }
+
+.soap-icon-triangle-left:before {
+  content: '\e884'; }
+
+.soap-icon-triangle-right:before {
+  content: '\e885'; }
+
+.soap-icon-triangle-top:before {
+  content: '\e886'; }
+
+.soap-icon-chevron-right:before {
+  content: '\e887'; }
+
+.soap-icon-chevron-top:before {
+  content: '\e888'; }
+
+.soap-icon-chevron-down:before {
+  content: '\e889'; }
+
+.soap-icon-longarrow-left:before {
+  content: '\e88a'; }
+
+.soap-icon-longarrow-right:before {
+  content: '\e88b'; }
+
+.soap-icon-triangle-bottom:before {
+  content: '\e88c'; }
+
+.soap-icon-plus:before {
+  content: '\e88d'; }
+
+.soap-icon-minus:before {
+  content: '\e88e'; }
+
+.soap-icon-ski:before {
+  content: '\e88f'; }
+
+.soap-icon-close:before {
+  content: '\e890'; }
+
+.soap-icon-handicapaccessiable:before {
+  content: '\e891'; }
+
+.soap-icon-check-1:before {
+  content: '\e892'; }
+
+.soap-icon-passed:before {
+  content: '\e893'; }
+
+.soap-icon-features:before {
+  content: '\e894'; }
+
+.soap-icon-passenger:before {
+  content: '\e895'; }
+
+.soap-icon-adventure:before {
+  content: '\e896'; }
+
+.soap-icon-man-2:before {
+  content: '\e897'; }
+
+.soap-icon-dog:before {
+  content: '\e898'; }
+
+.soap-icon-man-1:before {
+  content: '\e899'; }
+
+.soap-icon-swimming:before {
+  content: '\e89a'; }
+
+.soap-icon-man-3:before {
+  content: '\e89b'; }
+
+.soap-icon-comfort:before {
+  content: '\e89c'; }
+
+.soap-icon-smoking:before {
+  content: '\e89e'; }
+
+.soap-icon-playplace:before {
+  content: '\e89f'; }
+
+.soap-icon-facebook:before {
+  content: '\e8a0'; }
+
+.soap-icon-googleplus:before {
+  content: '\e8a1'; }
+
+.soap-icon-pinterest:before {
+  content: '\e8a2'; }
+
+.soap-icon-vimeo:before {
+  content: '\e8a3'; }
+
+.soap-icon-doorman:before {
+  content: '\e8a4'; }
+
+.soap-icon-googleplay:before {
+  content: '\e8a5'; }
+
+.soap-icon-elevator:before {
+  content: '\e8a6'; }
+
+.soap-icon-apple:before {
+  content: '\e8a7'; }
+
+.soap-icon-twitter:before {
+  content: '\e8a8'; }
+
+.soap-icon-tub:before {
+  content: '\e8a9'; }
+
+.soap-icon-myspace:before {
+  content: '\e8aa'; }
+
+.soap-icon-youtube:before {
+  content: '\e8ab'; }
+
+.soap-icon-tumblr:before {
+  content: '\e8ac'; }
+
+.soap-icon-flickr:before {
+  content: '\e8ad'; }
+
+.soap-icon-soundcloud:before {
+  content: '\e8ae'; }
+
+.soap-icon-stumbleupon:before {
+  content: '\e8af'; }
+
+.soap-icon-linkedin:before {
+  content: '\e8b0'; }
+
+.soap-icon-dribble:before {
+  content: '\e8b1'; }
+
+.soap-icon-deviantart:before {
+  content: '\e8b2'; }
+
+.soap-icon-behance:before {
+  content: '\e8b3'; }
+
+.soap-icon-envato:before {
+  content: '\e8b4'; }
+
+.soap-icon-instagram:before {
+  content: '\e8b5'; }
+
+.soap-icon-skype:before {
+  content: '\e8b6'; }
+
+.soap-icon-user:before {
+  content: '\e8b7'; }
+
+.soap-icon-pets:before {
+  content: '\e8b8'; }
+
+.soap-icon-family:before {
+  content: '\e8b9'; }
+
+.soap-icon-check:before {
+  content: '\e8ba'; }
+
+.soap-icon-notice:before {
+  content: '\e8bb'; }
+
+.soap-icon-error:before {
+  content: '\e8bc'; }
+
+.soap-icon-generalmessage:before {
+  content: '\e8bd'; }
+
+.soap-icon-automatic-transmission:before {
+  content: '\e8be'; }
+
+.soap-icon-flight-hotel:before {
+  content: '\e8bf'; }
+
+.soap-icon-comment:before {
+  content: '\e8c0'; }

@@ -1,0 +1,251 @@
+/*
+ * Title:   Travelo | Responsive HTML5 Travel Template - Revolution Slider Styles
+ * Author:  http://themeforest.net/user/soaptheme
+ */
+
+.fullwidthbanner-container {
+    max-height: 700px !important;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+}
+
+.tp-caption { color: #fff; text-align: center; }
+
+.caption-big-title { font-size: 30px; line-height: 1.1667em; margin: 0; }
+.caption-big-title strong, .tp-caption .caption-big-title i { font-size: 30px; }
+
+.caption-medium-title { font-size: 25px; line-height: 1.1667em; margin: 0; }
+.caption-medium-title strong, .tp-caption .caption-medium-title i { font-size: 25px; }
+
+.caption-small-title { font-size: 20px; line-height: 1.1667em; margin: 0; }
+.caption-medium-title strong, .tp-caption .caption-medium-title i { font-size: 20px; }
+
+.tp-caption .button-group { text-align: left; margin: 0; }
+
+.tp-caption a { color: #fff; }
+
+.tp-caption a.link { display: inline-block; color: #fff; padding: 0 1.2em; line-height: 2.2em; font-weight: bold; font-size: 1.3333em; }
+
+.tp-caption a.link-home-slider-blue { background: #2d3e52; }
+.tp-caption a.link-home-slider-blue:hover { background: #223040; }
+
+.tp-caption a.link-home-slider-trans { background: transparent; border: 1px solid #fff; border-radius: 1px; font-size: 1.16667em; font-weight: normal; /*width: 120px;*/ text-align: center; }
+.tp-caption a.link-home-slider-trans:hover { background: #fff; color: #78d9f8; }
+
+.tp-leftarrow.default, .tp-rightarrow.default { background: none; overflow: visible; opacity: .8; filter: alpha(80); -webkit-transform: none; }
+.tp-leftarrow.default:hover, .tp-rightarrow.default:hover { opacity: 1; filter: alpha(100); }
+.tp-leftarrow.default:before { position: absolute; top: 10px; right: 0; content: "\f053"; display: block; color: white; font-size: 3em; font-family: FontAwesome; }
+.tp-rightarrow.default:before { position: absolute; top: 10px; left: 0; content: "\f054"; display: block; color: white; font-size: 3em; font-family: FontAwesome; }
+
+.tp-caption.largewhitebg_button1 {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+    padding: 0 25px;
+    text-decoration: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+.tp-caption.largewhitebg_button1 a { color: #fff; }
+
+.tp-caption.largewhitebg_button1:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(1, 183, 242);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+    padding: 0 25px;
+    text-decoration: none;
+    text-shadow: none;
+}
+.tp-caption.largewhitebg_button1:hover a { color: #78d9f8; }
+
+.tp-caption.large_bold_white_med {
+    background-color: transparent;
+    border-color: rgb(255, 214, 88);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.tp-caption.large_bold_white_med_2 {
+    background-color: transparent;
+    border-color: rgb(255, 214, 88);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+}
+.tp-caption.large_bold_black2_1 {
+    background-color: transparent;
+    border-color: rgb(255, 214, 88);
+    border-style: none;
+    border-width: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.tp-caption.large_bold_black2_2 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+}
+.tp-caption.black22 {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 70, 53);
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: none;
+}
+.tp-caption.black33 {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: none;
+    border-width: 0;
+    color: rgb(62, 62, 62);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 33px;
+    text-decoration: none;
+    text-shadow: none;
+}
+.tp-caption.black331 {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 0;
+    color: rgb(62, 62, 62);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 17px;
+    text-decoration: none;
+    text-shadow: none;
+}
+.tp-caption.black3_1 {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    line-height: 117px;
+    text-decoration: none;
+    text-shadow: 0 15px 10px rgba(51, 62, 2, 0.42);
+    text-transform: uppercase;
+    word-spacing: normal;
+	font-family: 'NexaBlack';
+	letter-spacing: -0.1em;
+}
+.tp-caption.black3_11 {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 20px;
+    text-decoration: none;
+    text-shadow: 0 15px 10px rgba(51, 62, 2, 0.42);
+    text-transform: uppercase;
+    word-spacing: normal;
+}
+.tp-caption.large_bold_white_med111 {
+    background-color: transparent;
+    border-color: rgb(255, 214, 88);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.tp-caption.large_bold_white_med_222 {
+    background-color: transparent;
+    border-color: rgb(255, 214, 88);
+    border-style: none;
+    border-width: 0;
+    color: #ffffff;
+    font-size: 51px;
+    font-weight: 300;
+    line-height: 58px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.tp-caption.black3_1112 {
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    border-style: none;
+    border-width: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    text-decoration: none;
+    word-spacing: normal;
+	text-align: left;
+}
+.tp-caption.large_bold_white_med1221 {
+    background-color: transparent;
+    border-color: rgb(255, 214, 88);
+    border-style: none;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.tp-caption.largewhitebg_button1_blue, .tp-caption.largewhitebg_button1_yellow, .tp-caption.largewhitebg_button1_green {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    padding: 0 25px;
+    text-decoration: none;
+}
+.tp-caption.largewhitebg_button1_blue:hover {
+    background-color: #fff;
+    color: #01b7f2;
+}
+.tp-caption.largewhitebg_button1_yellow:hover {
+    background-color: #fff;
+    color: #fdb714;
+}
+.tp-caption.largewhitebg_button1_green:hover {
+    background-color: #fff;
+    color: #98ce44;
+}
+/*.tp-simpleresponsive > ul > li {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}*/

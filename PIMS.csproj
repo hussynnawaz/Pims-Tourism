@@ -1,0 +1,1170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE182029-6DDF-4265-AA07-ABADAAB11975}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PIMS</RootNamespace>
+    <AssemblyName>PIMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Admin Panel\HotelManagementSystem\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Blend\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assest\ajax\cruise-slideshow-popup.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\1.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\10.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\11.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\2.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\3.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\4.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\5.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\6.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\7.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\8.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\9.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\1.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\10.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\11.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\2.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\3.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\4.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\5.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\6.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\7.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\8.html" />
+    <Content Include="assest\ajax\images\cruise\gallery\thumbnail\9.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\1.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\10.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\11.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\12.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\13.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\2.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\3.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\4.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\5.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\6.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\7.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\8.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\9.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\1.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\10.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\11.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\12.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\13.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\2.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\3.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\4.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\5.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\6.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\7.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\8.html" />
+    <Content Include="assest\ajax\images\shortcodes\gallery-popup\thumbnail\9.html" />
+    <Content Include="assest\ajax\slideshow-popup.aspx" />
+    <Content Include="assest\ajax\slideshow-popup.html" />
+    <Content Include="assest\ajax\slideshow-popup1.html" />
+    <Content Include="assest\components\flexslider\flexslider.css" />
+    <Content Include="assest\components\flexslider\fonts\flexslider-icon.svg" />
+    <Content Include="assest\components\flexslider\images\bg_play_pause.png" />
+    <Content Include="assest\components\flexslider\jquery.flexslider-min.js" />
+    <Content Include="assest\components\flexslider\jquery.flexslider.js" />
+    <Content Include="assest\components\jquery.bxslider\images\bx_loader.gif" />
+    <Content Include="assest\components\jquery.bxslider\images\controls.png" />
+    <Content Include="assest\components\jquery.bxslider\jquery.bxslider.css" />
+    <Content Include="assest\components\jquery.bxslider\jquery.bxslider.js" />
+    <Content Include="assest\components\jquery.bxslider\jquery.bxslider.min.js" />
+    <Content Include="assest\components\jquery.bxslider\plugins\jquery.easing.1.3.js" />
+    <Content Include="assest\components\jquery.bxslider\plugins\jquery.fitvids.js" />
+    <Content Include="assest\components\layerslider\css\blank.gif" />
+    <Content Include="assest\components\layerslider\css\layerslider.css" />
+    <Content Include="assest\components\layerslider\js\greensock.js" />
+    <Content Include="assest\components\layerslider\js\jquery.js" />
+    <Content Include="assest\components\layerslider\js\layerslider.kreaturamedia.jquery.js" />
+    <Content Include="assest\components\layerslider\js\layerslider.transitions.js" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark3d\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark3d\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark3d\shadow.png" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark3d\skin.css" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark3d\skin.png" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark\shadow.png" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark\skin.css" />
+    <Content Include="assest\components\layerslider\skins\borderlessdark\skin.png" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight3d\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight3d\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight3d\shadow.png" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight3d\skin.css" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight3d\skin.png" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight\shadow.png" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight\skin.css" />
+    <Content Include="assest\components\layerslider\skins\borderlesslight\skin.png" />
+    <Content Include="assest\components\layerslider\skins\carousel\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\carousel\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\carousel\skin.css" />
+    <Content Include="assest\components\layerslider\skins\carousel\skin.png" />
+    <Content Include="assest\components\layerslider\skins\darkskin\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\darkskin\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\darkskin\skin.css" />
+    <Content Include="assest\components\layerslider\skins\darkskin\skin.png" />
+    <Content Include="assest\components\layerslider\skins\defaultskin\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\defaultskin\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\defaultskin\skin.css" />
+    <Content Include="assest\components\layerslider\skins\defaultskin\skin.png" />
+    <Content Include="assest\components\layerslider\skins\fullwidthdark\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\fullwidthdark\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\fullwidthdark\skin.css" />
+    <Content Include="assest\components\layerslider\skins\fullwidthdark\skin.png" />
+    <Content Include="assest\components\layerslider\skins\fullwidth\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\fullwidth\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\fullwidth\skin.css" />
+    <Content Include="assest\components\layerslider\skins\fullwidth\skin.png" />
+    <Content Include="assest\components\layerslider\skins\glass\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\glass\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\glass\shadow.png" />
+    <Content Include="assest\components\layerslider\skins\glass\skin.css" />
+    <Content Include="assest\components\layerslider\skins\glass\skin.png" />
+    <Content Include="assest\components\layerslider\skins\lightskin\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\lightskin\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\lightskin\skin.css" />
+    <Content Include="assest\components\layerslider\skins\lightskin\skin.png" />
+    <Content Include="assest\components\layerslider\skins\minimal\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\minimal\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\minimal\skin.css" />
+    <Content Include="assest\components\layerslider\skins\minimal\skin.png" />
+    <Content Include="assest\components\layerslider\skins\noskin\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\noskin\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\noskin\skin.css" />
+    <Content Include="assest\components\layerslider\skins\noskin\skin.png" />
+    <Content Include="assest\components\layerslider\skins\v5\loading.gif" />
+    <Content Include="assest\components\layerslider\skins\v5\nothumb.png" />
+    <Content Include="assest\components\layerslider\skins\v5\skin.css" />
+    <Content Include="assest\components\layerslider\skins\v5\skin.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrowleft.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrowright.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrow_large_left.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrow_large_right.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrow_left.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrow_left2.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrow_right.png" />
+    <Content Include="assest\components\revolution_slider\assets\arrow_right2.png" />
+    <Content Include="assest\components\revolution_slider\assets\black50.png" />
+    <Content Include="assest\components\revolution_slider\assets\boxed_bgtile.png" />
+    <Content Include="assest\components\revolution_slider\assets\bullet.png" />
+    <Content Include="assest\components\revolution_slider\assets\bullets.png" />
+    <Content Include="assest\components\revolution_slider\assets\bullets2.png" />
+    <Content Include="assest\components\revolution_slider\assets\bullet_boxed.png" />
+    <Content Include="assest\components\revolution_slider\assets\coloredbg.png" />
+    <Content Include="assest\components\revolution_slider\assets\grain.png" />
+    <Content Include="assest\components\revolution_slider\assets\gridtile.png" />
+    <Content Include="assest\components\revolution_slider\assets\gridtile_3x3.png" />
+    <Content Include="assest\components\revolution_slider\assets\gridtile_3x3_white.png" />
+    <Content Include="assest\components\revolution_slider\assets\gridtile_white.png" />
+    <Content Include="assest\components\revolution_slider\assets\large_left.png" />
+    <Content Include="assest\components\revolution_slider\assets\large_right.png" />
+    <Content Include="assest\components\revolution_slider\assets\loader.gif" />
+    <Content Include="assest\components\revolution_slider\assets\loader2.gif" />
+    <Content Include="assest\components\revolution_slider\assets\navigdots.png" />
+    <Content Include="assest\components\revolution_slider\assets\navigdots_bgtile.png" />
+    <Content Include="assest\components\revolution_slider\assets\shadow1.png" />
+    <Content Include="assest\components\revolution_slider\assets\shadow2.png" />
+    <Content Include="assest\components\revolution_slider\assets\shadow3.png" />
+    <Content Include="assest\components\revolution_slider\assets\small_left.png" />
+    <Content Include="assest\components\revolution_slider\assets\small_left_boxed.png" />
+    <Content Include="assest\components\revolution_slider\assets\small_right.png" />
+    <Content Include="assest\components\revolution_slider\assets\small_right_boxed.png" />
+    <Content Include="assest\components\revolution_slider\assets\timer.png" />
+    <Content Include="assest\components\revolution_slider\assets\timerdot.png" />
+    <Content Include="assest\components\revolution_slider\assets\transparent.jpg" />
+    <Content Include="assest\components\revolution_slider\assets\white50.png" />
+    <Content Include="assest\components\revolution_slider\css\settings-ie8.css" />
+    <Content Include="assest\components\revolution_slider\css\settings.css" />
+    <Content Include="assest\components\revolution_slider\css\style.css" />
+    <Content Include="assest\components\revolution_slider\font\revicons.svg" />
+    <Content Include="assest\components\revolution_slider\images\decor_inside.png" />
+    <Content Include="assest\components\revolution_slider\images\decor_inside_white.png" />
+    <Content Include="assest\components\revolution_slider\images\decor_testimonial.png" />
+    <Content Include="assest\components\revolution_slider\images\gradient\g30.png" />
+    <Content Include="assest\components\revolution_slider\images\gradient\g40.png" />
+    <Content Include="assest\components\revolution_slider\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="assest\components\revolution_slider\js\jquery.themepunch.revolution.js" />
+    <Content Include="assest\components\revolution_slider\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="assest\components\revolution_slider\js\jquery.themepunch.tools.min.js" />
+    <Content Include="assest\ajax\cruise-slideshow-popup.aspx" />
+    <Content Include="assest\css\animate.min.css" />
+    <Content Include="assest\css\bootstrap.min.css" />
+    <Content Include="assest\css\custom.css" />
+    <Content Include="assest\css\font-awesome.min.css" />
+    <Content Include="assest\css\responsive.css" />
+    <Content Include="assest\css\soap-icon.css" />
+    <Content Include="assest\css\style-light-blue.css" />
+    <Content Include="assest\css\style1.css" />
+    <Content Include="assest\css\updates.css" />
+    <Content Include="assest\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="assest\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assest\images\background1.jpg" />
+    <Content Include="assest\images\blog\full_width_post\image\1.png" />
+    <Content Include="assest\images\blog\full_width_post\slideshow\1.png" />
+    <Content Include="assest\images\blog\full_width_post\slideshow\2.png" />
+    <Content Include="assest\images\blog\full_width_post\slideshow\3.png" />
+    <Content Include="assest\images\blog\post\image\1.png" />
+    <Content Include="assest\images\blog\post\slideshow\1.png" />
+    <Content Include="assest\images\blog\post\slideshow\2.png" />
+    <Content Include="assest\images\blog\post\slideshow\3.png" />
+    <Content Include="assest\images\cars\10.png" />
+    <Content Include="assest\images\cars\11.png" />
+    <Content Include="assest\images\cars\12.png" />
+    <Content Include="assest\images\cars\13.png" />
+    <Content Include="assest\images\cars\14.png" />
+    <Content Include="assest\images\cars\15.png" />
+    <Content Include="assest\images\cars\16.png" />
+    <Content Include="assest\images\cars\17.png" />
+    <Content Include="assest\images\cars\18.png" />
+    <Content Include="assest\images\cars\19.png" />
+    <Content Include="assest\images\cars\20.png" />
+    <Content Include="assest\images\cars\21.png" />
+    <Content Include="assest\images\cars\22.png" />
+    <Content Include="assest\images\cars\23.png" />
+    <Content Include="assest\images\cars\24.png" />
+    <Content Include="assest\images\cars\25.png" />
+    <Content Include="assest\images\cars\26.png" />
+    <Content Include="assest\images\cars\27.png" />
+    <Content Include="assest\images\cars\28.png" />
+    <Content Include="assest\images\cars\29.png" />
+    <Content Include="assest\images\cars\3.png" />
+    <Content Include="assest\images\cars\30.png" />
+    <Content Include="assest\images\cars\31.png" />
+    <Content Include="assest\images\cars\32.png" />
+    <Content Include="assest\images\cars\33.png" />
+    <Content Include="assest\images\cars\34.png" />
+    <Content Include="assest\images\cars\35.png" />
+    <Content Include="assest\images\cars\4.png" />
+    <Content Include="assest\images\cars\5.png" />
+    <Content Include="assest\images\cars\6.png" />
+    <Content Include="assest\images\cars\7.png" />
+    <Content Include="assest\images\cars\8.png" />
+    <Content Include="assest\images\cars\9.png" />
+    <Content Include="assest\images\cars\couple.png" />
+    <Content Include="assest\images\cars\logo\1.png" />
+    <Content Include="assest\images\cars\logo\2.png" />
+    <Content Include="assest\images\cars\logo\3.png" />
+    <Content Include="assest\images\cars\logo\4.png" />
+    <Content Include="assest\images\cars\logo\5.png" />
+    <Content Include="assest\images\cars\main1.png" />
+    <Content Include="assest\images\cars\thumbnail\1.png" />
+    <Content Include="assest\images\cars\thumbnail\2.png" />
+    <Content Include="assest\images\cars\thumbnail\3.png" />
+    <Content Include="assest\images\cars\thumbnail\4.png" />
+    <Content Include="assest\images\cars\thumbnail\5.png" />
+    <Content Include="assest\images\cars\thumbnail\6.png" />
+    <Content Include="assest\images\cars\thumbnail\7.png" />
+    <Content Include="assest\images\couple.png" />
+    <Content Include="assest\images\couple1.png" />
+    <Content Include="assest\images\cruise\1.png" />
+    <Content Include="assest\images\cruise\10.png" />
+    <Content Include="assest\images\cruise\11.png" />
+    <Content Include="assest\images\cruise\12.png" />
+    <Content Include="assest\images\cruise\13.png" />
+    <Content Include="assest\images\cruise\2.png" />
+    <Content Include="assest\images\cruise\3.png" />
+    <Content Include="assest\images\cruise\4.png" />
+    <Content Include="assest\images\cruise\5.png" />
+    <Content Include="assest\images\cruise\6.png" />
+    <Content Include="assest\images\cruise\7.png" />
+    <Content Include="assest\images\cruise\8.png" />
+    <Content Include="assest\images\cruise\9.png" />
+    <Content Include="assest\images\cruise\food-dinning\1.png" />
+    <Content Include="assest\images\cruise\food-dinning\2.png" />
+    <Content Include="assest\images\cruise\food-dinning\3.png" />
+    <Content Include="assest\images\cruise\food-dinning\4.png" />
+    <Content Include="assest\images\cruise\food-dinning\5.png" />
+    <Content Include="assest\images\cruise\gallery\1.jpg" />
+    <Content Include="assest\images\cruise\gallery\10.jpg" />
+    <Content Include="assest\images\cruise\gallery\11.jpg" />
+    <Content Include="assest\images\cruise\gallery\2.jpg" />
+    <Content Include="assest\images\cruise\gallery\3.jpg" />
+    <Content Include="assest\images\cruise\gallery\4.jpg" />
+    <Content Include="assest\images\cruise\gallery\5.jpg" />
+    <Content Include="assest\images\cruise\gallery\6.jpg" />
+    <Content Include="assest\images\cruise\gallery\7.jpg" />
+    <Content Include="assest\images\cruise\gallery\8.jpg" />
+    <Content Include="assest\images\cruise\gallery\9.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\1.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\10.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\11.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\2.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\3.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\4.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\5.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\6.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\7.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\8.jpg" />
+    <Content Include="assest\images\cruise\gallery\thumbnail\9.jpg" />
+    <Content Include="assest\images\cruise\home\cruise1.png" />
+    <Content Include="assest\images\cruise\home\girl.png" />
+    <Content Include="assest\images\cruise\logo\1.png" />
+    <Content Include="assest\images\cruise\logo\2.png" />
+    <Content Include="assest\images\cruise\logo\3.png" />
+    <Content Include="assest\images\cruise\logo\4.png" />
+    <Content Include="assest\images\cruise\logo\5.png" />
+    <Content Include="assest\images\cruise\logo\6.png" />
+    <Content Include="assest\images\cruise\room\1.png" />
+    <Content Include="assest\images\cruise\room\2.png" />
+    <Content Include="assest\images\cruise\room\3.png" />
+    <Content Include="assest\images\dashboard\booking1.png" />
+    <Content Include="assest\images\dashboard\booking2.png" />
+    <Content Include="assest\images\dashboard\booking3.png" />
+    <Content Include="assest\images\dashboard\suggestion1.png" />
+    <Content Include="assest\images\dashboard\suggestion2.png" />
+    <Content Include="assest\images\dashboard\suggestion3.png" />
+    <Content Include="assest\images\dashboard\suggestion4.png" />
+    <Content Include="assest\images\dashboard\suggestion5.png" />
+    <Content Include="assest\images\destinations01.jpg" />
+    <Content Include="assest\images\destinations02.jpg" />
+    <Content Include="assest\images\destinations03.jpg" />
+    <Content Include="assest\images\destinations04.jpg" />
+    <Content Include="assest\images\destinations05.png" />
+    <Content Include="assest\images\destinations06.png" />
+    <Content Include="assest\images\destinations07.png" />
+    <Content Include="assest\images\destinations08.png" />
+    <Content Include="assest\images\destinations09.jpg" />
+    <Content Include="assest\images\flight\home\1.png" />
+    <Content Include="assest\images\flight\home\2.png" />
+    <Content Include="assest\images\flight\home\3.png" />
+    <Content Include="assest\images\flight\home\before-you-fly.png" />
+    <Content Include="assest\images\flight\home\girl.png" />
+    <Content Include="assest\images\flight\logo\1.png" />
+    <Content Include="assest\images\flight\logo\2.png" />
+    <Content Include="assest\images\flight\logo\3.png" />
+    <Content Include="assest\images\flight\logo\4.png" />
+    <Content Include="assest\images\flight\main1.png" />
+    <Content Include="assest\images\flight\seat\1.png" />
+    <Content Include="assest\images\flight\seat\2.png" />
+    <Content Include="assest\images\flight\seat\3.png" />
+    <Content Include="assest\images\flight\seat\4.png" />
+    <Content Include="assest\images\flight\thumbnail\1.png" />
+    <Content Include="assest\images\homepage10_bg.jpg" />
+    <Content Include="assest\images\homepage10_bg2.jpg" />
+    <Content Include="assest\images\homepage10_bg3.jpg" />
+    <Content Include="assest\images\homepage10_bg4.jpg" />
+    <Content Include="assest\images\homepage10_bg5.jpg" />
+    <Content Include="assest\images\homepage10_bg6.jpg" />
+    <Content Include="assest\images\homepage10_bg7.jpg" />
+    <Content Include="assest\images\homepage10_featured.png" />
+    <Content Include="assest\images\hotels\1.png" />
+    <Content Include="assest\images\hotels\10.png" />
+    <Content Include="assest\images\hotels\11.png" />
+    <Content Include="assest\images\hotels\12.png" />
+    <Content Include="assest\images\hotels\13.png" />
+    <Content Include="assest\images\hotels\14.png" />
+    <Content Include="assest\images\hotels\15.png" />
+    <Content Include="assest\images\hotels\16.png" />
+    <Content Include="assest\images\hotels\17.png" />
+    <Content Include="assest\images\hotels\18.png" />
+    <Content Include="assest\images\hotels\2.png" />
+    <Content Include="assest\images\hotels\3.png" />
+    <Content Include="assest\images\hotels\4.png" />
+    <Content Include="assest\images\hotels\5.png" />
+    <Content Include="assest\images\hotels\6.png" />
+    <Content Include="assest\images\hotels\7.png" />
+    <Content Include="assest\images\hotels\8.png" />
+    <Content Include="assest\images\hotels\9.png" />
+    <Content Include="assest\images\hotels\activities\1.png" />
+    <Content Include="assest\images\hotels\activities\2.png" />
+    <Content Include="assest\images\hotels\activities\3.png" />
+    <Content Include="assest\images\hotels\hot-hotel1.png" />
+    <Content Include="assest\images\hotels\logo\1.png" />
+    <Content Include="assest\images\hotels\room\1.png" />
+    <Content Include="assest\images\hotels\room\2.png" />
+    <Content Include="assest\images\hotels\room\3.png" />
+    <Content Include="assest\images\hotels\room\4.png" />
+    <Content Include="assest\images\hotels\room\5.png" />
+    <Content Include="assest\images\hotels\room\6.png" />
+    <Content Include="assest\images\hotels\room\7.png" />
+    <Content Include="assest\images\hotels\room\8.png" />
+    <Content Include="assest\images\investor\1.png" />
+    <Content Include="assest\images\investor\2.png" />
+    <Content Include="assest\images\investor\3.png" />
+    <Content Include="assest\images\investor\4.png" />
+    <Content Include="assest\images\investor\5.png" />
+    <Content Include="assest\images\investor\6.png" />
+    <Content Include="assest\images\logo.png" />
+    <Content Include="assest\images\logo1.png" />
+    <Content Include="assest\images\logo2.png" />
+    <Content Include="assest\images\news01.png" />
+    <Content Include="assest\images\news02.png" />
+    <Content Include="assest\images\news\1.png" />
+    <Content Include="assest\images\news\2.png" />
+    <Content Include="assest\images\news\3.png" />
+    <Content Include="assest\images\offers01.jpg" />
+    <Content Include="assest\images\offers02.jpg" />
+    <Content Include="assest\images\offers03.jpg" />
+    <Content Include="assest\images\offers04.jpg" />
+    <Content Include="assest\images\pages\404\404-page-3-girl.png" />
+    <Content Include="assest\images\pages\404\404-style1.png" />
+    <Content Include="assest\images\pages\coming-soon\couple.png" />
+    <Content Include="assest\images\pages\extra\airport-information.jpg" />
+    <Content Include="assest\images\pages\extra\children.jpg" />
+    <Content Include="assest\images\pages\extra\holiday-banner1.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-banner1.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features1.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features2.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features3.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features4.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features5.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features6.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features7.jpg" />
+    <Content Include="assest\images\pages\extra\inflight-experience-features8.jpg" />
+    <Content Include="assest\images\pages\extra\special-assistance.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\1.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\10.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\11.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\12.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\13.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\14.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\15.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\16.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\17.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\18.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\2.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\3.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\4.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\5.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\6.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\7.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\8.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\9.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\1.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\2.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\3.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\4.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\5.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\6.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\7.jpg" />
+    <Content Include="assest\images\pages\extra\things-todo\activities\8.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\2.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\3.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\4.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\5.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\6.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\7.jpg" />
+    <Content Include="assest\images\pages\extra\travel-essentials\8.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\car1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\cruise1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\culture-history1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\culture1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\flight1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\history1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\hotel1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\info1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\landscape1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\nightlife1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-guide\sport1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\10.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\2.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\3.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\4.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\5.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\6.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\7.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\8.jpg" />
+    <Content Include="assest\images\pages\extra\travel-ideas\9.jpg" />
+    <Content Include="assest\images\pages\extra\travel-insurance\banner.jpg" />
+    <Content Include="assest\images\pages\extra\travel-insurance\type1.jpg" />
+    <Content Include="assest\images\pages\extra\travel-insurance\type2.jpg" />
+    <Content Include="assest\images\pages\extra\travel-insurance\type3.jpg" />
+    <Content Include="assest\images\pages\extra\visa-passport.jpg" />
+    <Content Include="assest\images\pages\image1.png" />
+    <Content Include="assest\images\pages\loading\girl.png" />
+    <Content Include="assest\images\pages\login\places.png" />
+    <Content Include="assest\images\pages\login\plane.png" />
+    <Content Include="assest\images\pages\paris.png" />
+    <Content Include="assest\images\photogallery\2column\1.png" />
+    <Content Include="assest\images\photogallery\2column\2.png" />
+    <Content Include="assest\images\photogallery\2column\3.png" />
+    <Content Include="assest\images\photogallery\2column\4.png" />
+    <Content Include="assest\images\photogallery\2column\5.png" />
+    <Content Include="assest\images\photogallery\2column\6.png" />
+    <Content Include="assest\images\photogallery\2column\7.png" />
+    <Content Include="assest\images\photogallery\2column\8.png" />
+    <Content Include="assest\images\photogallery\3column\1.png" />
+    <Content Include="assest\images\photogallery\3column\10.png" />
+    <Content Include="assest\images\photogallery\3column\11.png" />
+    <Content Include="assest\images\photogallery\3column\12.png" />
+    <Content Include="assest\images\photogallery\3column\2.png" />
+    <Content Include="assest\images\photogallery\3column\3.png" />
+    <Content Include="assest\images\photogallery\3column\4.png" />
+    <Content Include="assest\images\photogallery\3column\5.png" />
+    <Content Include="assest\images\photogallery\3column\6.png" />
+    <Content Include="assest\images\photogallery\3column\7.png" />
+    <Content Include="assest\images\photogallery\3column\8.png" />
+    <Content Include="assest\images\photogallery\3column\9.png" />
+    <Content Include="assest\images\photogallery\4column\1.png" />
+    <Content Include="assest\images\photogallery\4column\10.png" />
+    <Content Include="assest\images\photogallery\4column\11.png" />
+    <Content Include="assest\images\photogallery\4column\12.png" />
+    <Content Include="assest\images\photogallery\4column\13.png" />
+    <Content Include="assest\images\photogallery\4column\14.png" />
+    <Content Include="assest\images\photogallery\4column\15.png" />
+    <Content Include="assest\images\photogallery\4column\16.png" />
+    <Content Include="assest\images\photogallery\4column\2.png" />
+    <Content Include="assest\images\photogallery\4column\3.png" />
+    <Content Include="assest\images\photogallery\4column\4.png" />
+    <Content Include="assest\images\photogallery\4column\5.png" />
+    <Content Include="assest\images\photogallery\4column\6.png" />
+    <Content Include="assest\images\photogallery\4column\7.png" />
+    <Content Include="assest\images\photogallery\4column\8.png" />
+    <Content Include="assest\images\photogallery\4column\9.png" />
+    <Content Include="assest\images\photogallery\fullview\1.png" />
+    <Content Include="assest\images\places01.jpg" />
+    <Content Include="assest\images\places02.jpg" />
+    <Content Include="assest\images\places03.jpg" />
+    <Content Include="assest\images\revslider1\homepage\bg.jpg" />
+    <Content Include="assest\images\revslider1\homepage\brifcase.png" />
+    <Content Include="assest\images\revslider1\homepage\cap %281%29.png" />
+    <Content Include="assest\images\revslider1\homepage\cap.png" />
+    <Content Include="assest\images\revslider1\homepage\plane.png" />
+    <Content Include="assest\images\revslider1\homepage\tree.png" />
+    <Content Include="assest\images\revslider1\homepage\watch.png" />
+    <Content Include="assest\images\shortcodes\accordion1.png" />
+    <Content Include="assest\images\shortcodes\accordion2.png" />
+    <Content Include="assest\images\shortcodes\author1.png" />
+    <Content Include="assest\images\shortcodes\author2.png" />
+    <Content Include="assest\images\shortcodes\author3.jpg" />
+    <Content Include="assest\images\shortcodes\author4.jpg" />
+    <Content Include="assest\images\shortcodes\author5.jpg" />
+    <Content Include="assest\images\shortcodes\buttons-sample1.png" />
+    <Content Include="assest\images\shortcodes\buttons-sample2.png" />
+    <Content Include="assest\images\shortcodes\buttons-sample3.png" />
+    <Content Include="assest\images\shortcodes\gallery-popup\1.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\10.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\11.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\12.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\13.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\2.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\3.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\4.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\5.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\6.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\7.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\8.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\9.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\1.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\10.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\11.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\12.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\13.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\2.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\3.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\4.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\5.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\6.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\7.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\8.jpg" />
+    <Content Include="assest\images\shortcodes\gallery-popup\thumbnail\9.jpg" />
+    <Content Include="assest\images\shortcodes\gallery\style01\1.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\1.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\10.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\11.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\12.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\13.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\14.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\2.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\3.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\4.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\5.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\6.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\7.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\8.png" />
+    <Content Include="assest\images\shortcodes\gallery\style01\thumbnail\9.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\1.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\10.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\11.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\12.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\2.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\3.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\4.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\5.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\6.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\7.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\8.png" />
+    <Content Include="assest\images\shortcodes\gallery\style02\9.png" />
+    <Content Include="assest\images\shortcodes\image-box\style03\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style03\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style03\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style03\4.png" />
+    <Content Include="assest\images\shortcodes\image-box\style04\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style04\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style04\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style05\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style05\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style05\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style06\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style06\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style06\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style07\1.jpg" />
+    <Content Include="assest\images\shortcodes\image-box\style07\2.jpg" />
+    <Content Include="assest\images\shortcodes\image-box\style07\3.jpg" />
+    <Content Include="assest\images\shortcodes\image-box\style07\4.jpg" />
+    <Content Include="assest\images\shortcodes\image-box\style08\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style08\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style08\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style09\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style09\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style09\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style09\4.png" />
+    <Content Include="assest\images\shortcodes\image-box\style09\5.png" />
+    <Content Include="assest\images\shortcodes\image-box\style09\6.png" />
+    <Content Include="assest\images\shortcodes\image-box\style10\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style10\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style10\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style11\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style11\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style11\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style11\4.png" />
+    <Content Include="assest\images\shortcodes\image-box\style11\5.png" />
+    <Content Include="assest\images\shortcodes\image-box\style11\6.png" />
+    <Content Include="assest\images\shortcodes\image-box\style12\1.png" />
+    <Content Include="assest\images\shortcodes\image-box\style12\2.png" />
+    <Content Include="assest\images\shortcodes\image-box\style12\3.png" />
+    <Content Include="assest\images\shortcodes\image-box\style12\4.png" />
+    <Content Include="assest\images\shortcodes\image\style01\1.png" />
+    <Content Include="assest\images\shortcodes\image\style01\2.png" />
+    <Content Include="assest\images\shortcodes\image\style01\3.png" />
+    <Content Include="assest\images\shortcodes\image\style01\4.png" />
+    <Content Include="assest\images\shortcodes\image\style01\5.png" />
+    <Content Include="assest\images\shortcodes\image\style01\6.png" />
+    <Content Include="assest\images\shortcodes\image\style01\7.png" />
+    <Content Include="assest\images\shortcodes\image\style01\8.png" />
+    <Content Include="assest\images\shortcodes\image\style01\9.png" />
+    <Content Include="assest\images\shortcodes\image\style02\1.png" />
+    <Content Include="assest\images\shortcodes\image\style02\2.png" />
+    <Content Include="assest\images\shortcodes\image\style02\3.png" />
+    <Content Include="assest\images\shortcodes\image\style02\4.png" />
+    <Content Include="assest\images\shortcodes\image\style02\5.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\car\1.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\car\2.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\car\3.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\car\4.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\cruise\1.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\cruise\2.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\cruise\3.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\cruise\4.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\flight\1.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\flight\2.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\flight\3.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\flight\4.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\hotel\1.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\hotel\2.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\hotel\3.png" />
+    <Content Include="assest\images\shortcodes\listings\style01\hotel\4.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\car\1.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\car\2.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\car\3.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\car\4.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\flight\1.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\flight\2.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\flight\3.png" />
+    <Content Include="assest\images\shortcodes\listings\style02\flight\4.png" />
+    <Content Include="assest\images\shortcodes\listings\style03\car\logo1.png" />
+    <Content Include="assest\images\shortcodes\listings\style03\car\logo2.png" />
+    <Content Include="assest\images\shortcodes\listings\style03\car\logo3.png" />
+    <Content Include="assest\images\shortcodes\listings\style03\cruise\logo1.png" />
+    <Content Include="assest\images\shortcodes\listings\style03\cruise\logo2.png" />
+    <Content Include="assest\images\shortcodes\listings\style03\cruise\logo3.png" />
+    <Content Include="assest\images\shortcodes\promo-image1.png" />
+    <Content Include="assest\images\shortcodes\promo-image2.png" />
+    <Content Include="assest\images\shortcodes\promo-image3.png" />
+    <Content Include="assest\images\shortcodes\seal.png" />
+    <Content Include="assest\images\shortcodes\tabs01.png" />
+    <Content Include="assest\images\shortcodes\tabs02.png" />
+    <Content Include="assest\images\shortcodes\tabs03.png" />
+    <Content Include="assest\images\shortcodes\team\david.png" />
+    <Content Include="assest\images\shortcodes\team\jessica.png" />
+    <Content Include="assest\images\shortcodes\team\kyle.png" />
+    <Content Include="assest\images\shortcodes\team\robets.png" />
+    <Content Include="assest\images\sliders\revolution_slider\slider5\slide3\girl.png" />
+    <Content Include="assest\images\tour\home\guide\1.jpg" />
+    <Content Include="assest\images\tour\home\guide\2.jpg" />
+    <Content Include="assest\images\tour\home\guide\3.jpg" />
+    <Content Include="assest\images\tour\home\guide\4.jpg" />
+    <Content Include="assest\images\tour\home\logo.png" />
+    <Content Include="assest\images\tour\home\slider\1.jpg" />
+    <Content Include="assest\images\tour\home\slider\2.jpg" />
+    <Content Include="assest\images\tour\home\slider\3.jpg" />
+    <Content Include="assest\images\tour\home\slider\4.jpg" />
+    <Content Include="assest\images\tour\home\slider\5.jpg" />
+    <Content Include="assest\images\tour\main-small.jpg" />
+    <Content Include="assest\images\tour\main.jpg" />
+    <Content Include="assest\images\tour\packages\2-col\1.jpg" />
+    <Content Include="assest\images\tour\packages\2-col\2.jpg" />
+    <Content Include="assest\images\tour\packages\2-col\3.jpg" />
+    <Content Include="assest\images\tour\packages\2-col\4.jpg" />
+    <Content Include="assest\images\tour\packages\2-col\5.jpg" />
+    <Content Include="assest\images\tour\packages\2-col\6.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\1.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\10.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\11.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\12.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\2.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\3.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\4.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\5.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\6.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\7.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\8.jpg" />
+    <Content Include="assest\images\tour\packages\3-col\9.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\1.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\10.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\11.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\12.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\13.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\14.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\15.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\16.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\2.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\3.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\4.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\5.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\6.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\7.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\8.jpg" />
+    <Content Include="assest\images\tour\packages\4-col\9.jpg" />
+    <Content Include="assest\images\tour\simple-packages\2-col\1.jpg" />
+    <Content Include="assest\images\tour\simple-packages\2-col\2.jpg" />
+    <Content Include="assest\images\tour\simple-packages\2-col\3.jpg" />
+    <Content Include="assest\images\tour\simple-packages\2-col\4.jpg" />
+    <Content Include="assest\images\tour\simple-packages\2-col\5.jpg" />
+    <Content Include="assest\images\tour\simple-packages\2-col\6.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\1.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\2.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\3.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\4.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\5.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\6.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\7.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\8.jpg" />
+    <Content Include="assest\images\tour\simple-packages\3-col\9.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\1.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\10.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\11.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\12.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\2.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\3.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\4.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\5.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\6.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\7.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\8.jpg" />
+    <Content Include="assest\images\tour\simple-packages\4-col\9.jpg" />
+    <Content Include="assest\images\tour\thumbnail\1.jpg" />
+    <Content Include="assest\images\travelo_process.png" />
+    <Content Include="assest\images\travelo_site.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\11.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\22.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\33.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\44.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\66.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\77.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\area.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\arrow11.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\arrow112.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\arrow22.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\badaal.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\badall2.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\baddel2.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\ballon2.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\baloo_3.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\bg3.jpg" />
+    <Content Include="assest\images\uploads\revslider1\concept\bg4.jpg" />
+    <Content Include="assest\images\uploads\revslider1\concept\bg5.jpg" />
+    <Content Include="assest\images\uploads\revslider1\concept\cars.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\cloud1.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\cloud11.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\cruses.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\doodle.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\fligts.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\girl1.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\grasss.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\guy.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\hotel.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\suitcase.png" />
+    <Content Include="assest\images\uploads\revslider1\concept\sun.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\ba221.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\ba231.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\background.jpg" />
+    <Content Include="assest\images\uploads\revslider1\couple\ballon1.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\bg5.jpg" />
+    <Content Include="assest\images\uploads\revslider1\couple\bg6.jpg" />
+    <Content Include="assest\images\uploads\revslider1\couple\big-clud.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\bird.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\car.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\couple.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\cycle.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\grass1.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\left-cloud.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\mountains.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\palm.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\patiyanw.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\right-cloud.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\sand.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\small-bird.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\sun11.png" />
+    <Content Include="assest\images\uploads\revslider1\couple\top-grass.png" />
+    <Content Include="assest\images\uploads\revslider1\family\ba221.png" />
+    <Content Include="assest\images\uploads\revslider1\family\ba231.png" />
+    <Content Include="assest\images\uploads\revslider1\family\background.png" />
+    <Content Include="assest\images\uploads\revslider1\family\backgrounnd-blue1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\ballon2.png" />
+    <Content Include="assest\images\uploads\revslider1\family\bg3434.png" />
+    <Content Include="assest\images\uploads\revslider1\family\bg7.jpg" />
+    <Content Include="assest\images\uploads\revslider1\family\building1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\car1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\chairs.png" />
+    <Content Include="assest\images\uploads\revslider1\family\cloud2.png" />
+    <Content Include="assest\images\uploads\revslider1\family\cloud4.png" />
+    <Content Include="assest\images\uploads\revslider1\family\clouds1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\family.png" />
+    <Content Include="assest\images\uploads\revslider1\family\family1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\family2.png" />
+    <Content Include="assest\images\uploads\revslider1\family\fan_2.png" />
+    <Content Include="assest\images\uploads\revslider1\family\grass12.png" />
+    <Content Include="assest\images\uploads\revslider1\family\grass2.png" />
+    <Content Include="assest\images\uploads\revslider1\family\holiday_1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\island1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\islandshadow.png" />
+    <Content Include="assest\images\uploads\revslider1\family\leaf2.png" />
+    <Content Include="assest\images\uploads\revslider1\family\leafs1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\new_fan.png" />
+    <Content Include="assest\images\uploads\revslider1\family\plane1.png" />
+    <Content Include="assest\images\uploads\revslider1\family\plans.png" />
+    <Content Include="assest\images\uploads\revslider1\family\road.jpg" />
+    <Content Include="assest\images\uploads\revslider1\family\sky.jpg" />
+    <Content Include="assest\images\uploads\revslider1\family\sky1.jpg" />
+    <Content Include="assest\images\uploads\revslider1\family\sun.png" />
+    <Content Include="assest\images\uploads\revslider1\family\tile.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\All1Sliders.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\ballon2.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\ballon21.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\base.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\bg2.jpg" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\bg3.jpg" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\bg4.jpg" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\chatri.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\holiday11.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\holiday_1.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\holiday_baddal.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\holiday_baddal21.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\holiday_ballon.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\holiday_flower.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\parrot.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\patiyan1.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\sdsdsd.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\sleepr2.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\woman.png" />
+    <Content Include="assest\images\uploads\revslider1\Holiday\woman1.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\ballon.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\balloon.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\bg.jpg" />
+    <Content Include="assest\images\uploads\revslider1\homepage\bg1.jpg" />
+    <Content Include="assest\images\uploads\revslider1\homepage\bg2.jpg" />
+    <Content Include="assest\images\uploads\revslider1\homepage\brifcase.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\buil.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\building.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\building2.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\building3.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\building4.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\building5.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\cap.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\cloud.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\girl.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\hand.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\island.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\italy.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\london.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\man.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\newyork.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\paris.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\plane.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\plane1.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\plane2.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\plate.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\pleane.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\shadow.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\stage.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\sydney.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\tree.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\watch.png" />
+    <Content Include="assest\images\uploads\revslider1\homepage\watch1.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\bg3-1.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\bg_22.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\girls3.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\girl_lap.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\logo22.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\man_1.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\rectangle.png" />
+    <Content Include="assest\images\uploads\revslider1\Promotion\slider_1_bg.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\baddal_new.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\bg.jpg" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\bg1.jpg" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\bg_4-11.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\center.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\flowers.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\grasss1.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic1.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic112.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic1121.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic1122.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic1124.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic1125.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic1126.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic112611.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic2.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic3.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic4.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic5.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic6.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic7.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pic8.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\pos.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss22.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss3.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss4.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss5.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss6.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss7.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\poss8.png" />
+    <Content Include="assest\images\uploads\revslider1\snapshot\small_pos.png" />
+    <Content Include="assest\js\bootstrap.js" />
+    <Content Include="assest\js\bootstrap.min.js" />
+    <Content Include="assest\js\calendar.js" />
+    <Content Include="assest\js\gmap3.infobox.js" />
+    <Content Include="assest\js\gmap3.min.js" />
+    <Content Include="assest\js\isotope.pkgd.min.js" />
+    <Content Include="assest\js\jquery-1.11.1.min.js" />
+    <Content Include="assest\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="assest\js\jquery-ui.1.10.4.min.js" />
+    <Content Include="assest\js\jquery.colorbox-min.js" />
+    <Content Include="assest\js\jquery.fitvids.min.js" />
+    <Content Include="assest\js\jquery.noconflict.js" />
+    <Content Include="assest\js\jquery.placeholder.js" />
+    <Content Include="assest\js\jquery.stellar.min.js" />
+    <Content Include="assest\js\modernizr.2.7.1.min.js" />
+    <Content Include="assest\js\pace.min.js" />
+    <Content Include="assest\js\page-loading.js" />
+    <Content Include="assest\js\scripts.js" />
+    <Content Include="assest\js\theme-scripts.js" />
+    <Content Include="assest\js\waypoints.min.js" />
+    <Content Include="bin\PIMS.dll" />
+    <Content Include="bin\PIMS.pdb" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="bin\PIMS.dll.config" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="assest\ajax\slideshow-popup.aspx.cs">
+      <DependentUpon>slideshow-popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assest\ajax\slideshow-popup.aspx.designer.cs">
+      <DependentUpon>slideshow-popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assest\ajax\cruise-slideshow-popup.aspx.cs">
+      <DependentUpon>cruise-slideshow-popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assest\ajax\cruise-slideshow-popup.aspx.designer.cs">
+      <DependentUpon>cruise-slideshow-popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="assest\components\flexslider\fonts\flexslider-icon.eot" />
+    <Content Include="assest\components\flexslider\fonts\flexslider-icon.ttf" />
+    <Content Include="assest\components\flexslider\fonts\flexslider-icon.woff" />
+    <Content Include="assest\components\jquery.bxslider\bower.json" />
+    <Content Include="assest\components\jquery.bxslider\readme.md" />
+    <Content Include="assest\components\revolution_slider\assets\arrows.psd" />
+    <Content Include="assest\components\revolution_slider\assets\bullets.psd" />
+    <Content Include="assest\components\revolution_slider\assets\small_arrows.psd" />
+    <Content Include="assest\components\revolution_slider\font\revicons.eot" />
+    <Content Include="assest\components\revolution_slider\font\revicons.ttf" />
+    <Content Include="assest\components\revolution_slider\font\revicons.woff" />
+    <Content Include="assest\components\revolution_slider\images\.DS_Store" />
+    <Content Include="assest\components\revolution_slider\js\.DS_Store" />
+    <Content Include="assest\fonts\fontawesome-webfont.woff" />
+    <Content Include="assest\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="assest\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="assest\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="assest\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assest\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assest\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assest\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assest\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assest\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="assest\fonts\NexaBlack.otf" />
+    <Content Include="assest\fonts\soap-icons.woff" />
+    <Content Include="assest\images\uploads\uploads - Shortcut.lnk" />
+    <Content Include="Views\Shared\Masterpage.cshtml" />
+    <Content Include="Views\Home\Aboutus.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\HotelListView.cshtml" />
+    <Content Include="Views\Home\RestaurantListView.cshtml" />
+    <Content Include="Views\Home\CarListView.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Home\Contactus.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58352</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58352/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

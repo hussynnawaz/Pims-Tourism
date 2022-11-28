@@ -1,0 +1,38 @@
+/* Title:   Updates Style File Author:  http://themeforest.net/user/soaptheme  */
+/* Version 2.6.2 (9/7/2015) */
+@media (max-width: 767px) { #booking .booking-info .info { clear: both; } }
+@media (max-width: 480px) { #booking .booking-info { padding-top: 20px; }
+  #booking .booking-info div.date { float: none; }
+  #profile .personal-details figure { width: auto; }
+  #booking .booking-info .info { float: none; width: auto; margin-top: 10px; }
+  #booking .booking-info .status { float: none; margin-bottom: 15px; } }
+/* Version 2.6.3 */
+.dashboard.style1 #content, .dashboard.style2 #content { -webkit-backface-visibility: visible; }
+
+.search-box-wrapper.style1 .search-box:after { content: ""; display: table; clear: both; }
+
+.search-box-wrapper.style1 .search-box > ul.search-tabs li > a:hover i { -webkit-animation: none; }
+
+.chaser .logo { margin-top: 0; font-size: inherit; }
+
+.chaser .logo a { height: 48px; line-height: 48px; background-position: left center; }
+
+.chaser .logo img { display: inline-block; vertical-align: middle; max-height: 100%; }
+
+.search-box, #slideshow .tp-rightarrow, #slideshow .tp-leftarrow { z-index: 98; }
+
+/* Version 2.8 */
+.style-changer#style-changer.opened { left: 0; }
+
+.checkbox-inline, .radio-inline { padding-left: 0; }
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] { margin: 0 7px 0 0; }
+
+.checkbox label, .checkbox.label { padding-left: 0; }
+
+/* Version 2.8.1 */
+#footer.style2 .footer-wrapper > .container:first-child:before, #footer.style4 > .footer-wrapper > .container:first-child:after, #footer.style5 > .footer-wrapper > .container:first-child:before { max-width: 100%; background-size: cover; }
+
+.image-style.style2 { overflow: hidden; }
+
+@media (max-width: 480px) { .image-style.style1 ul li { clear: none; } }

