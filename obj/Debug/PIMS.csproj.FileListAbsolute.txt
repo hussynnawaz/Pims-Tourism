@@ -10,3 +10,12 @@ G:\softwer engineering\Travel Agency\PIMS Tourism\Programming\PIMS\PIMS\bin\Syst
 G:\softwer engineering\Travel Agency\PIMS Tourism\Programming\PIMS\PIMS\obj\Debug\PIMS.csprojResolveAssemblyReference.cache
 G:\softwer engineering\Travel Agency\PIMS Tourism\Programming\PIMS\PIMS\obj\Debug\PIMS.dll
 G:\softwer engineering\Travel Agency\PIMS Tourism\Programming\PIMS\PIMS\obj\Debug\PIMS.pdb
+H:\PIMS\bin\PIMS.dll.config
+H:\PIMS\bin\PIMS.dll
+H:\PIMS\bin\PIMS.pdb
+H:\PIMS\bin\Newtonsoft.Json.dll
+H:\PIMS\obj\Debug\PIMS.csproj.AssemblyReference.cache
+H:\PIMS\obj\Debug\PIMS.csproj.CoreCompileInputs.cache
+H:\PIMS\obj\Debug\PIMS.csproj.CopyComplete
+H:\PIMS\obj\Debug\PIMS.dll
+H:\PIMS\obj\Debug\PIMS.pdb
